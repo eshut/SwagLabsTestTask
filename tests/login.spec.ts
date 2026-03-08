@@ -18,7 +18,7 @@ test.describe('Login', () => {
     await loginPage.login(LOCKED_OUT_USER.username, LOCKED_OUT_USER.password);
 
     await expect(loginPage.errorMessage).toContainText(
-      'Sorry, this user has been locked out'
+      'Sorry, this user has been locked out',
     );
   });
 });
