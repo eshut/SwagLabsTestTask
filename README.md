@@ -77,3 +77,13 @@ Screenshots are captured automatically on test failure. Traces are recorded on f
 ## CI/CD
 
 GitHub Actions workflow is configured in `.github/workflows/run-regression.yml`. It runs on push/PR to `main`, supports manual dispatch via `workflow_dispatch`, uploads HTML reports as artifacts, and retries failed tests twice in CI.
+
+## Screenshots
+
+![HTML Report](img/img.png)
+
+![Test Steps](img/img_1.png)
+
+![Trace Viewer - Cart](img/img_2.png)
+
+![Trace Viewer - Inventory](img/img_3.png)
