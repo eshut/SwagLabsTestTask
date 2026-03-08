@@ -78,6 +78,8 @@ Screenshots are captured automatically on test failure. Traces are recorded on f
 
 GitHub Actions workflow is configured in `.github/workflows/run-regression.yml`. It runs on push/PR to `main`, supports manual dispatch via `workflow_dispatch`, uploads HTML reports as artifacts, and retries failed tests twice in CI.
 
+[Example CI run](https://github.com/eshut/SwagLabsTestTask/actions/runs/22826300138/job/66207039183)
+
 ## Screenshots
 
 ![HTML Report](img/img.png)
