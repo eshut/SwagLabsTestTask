@@ -5,6 +5,7 @@ UI test automation framework for [saucedemo.com](https://www.saucedemo.com) buil
 ## Prerequisites
 
 - Node.js 20+
+- Docker (optional, for containerized runs)
 
 ## Setup
 
@@ -20,6 +21,7 @@ npm test                # run all tests (headless)
 npm run test:headed     # run with browser visible
 npm run test:ui         # open Playwright UI mode
 npm run test:debug      # run with Playwright Inspector
+npm run test:docker     # run in Docker container
 ```
 
 ## Viewing Reports
