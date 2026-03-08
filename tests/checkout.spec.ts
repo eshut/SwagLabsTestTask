@@ -1,5 +1,6 @@
 // https://github.com/eshut/SwagLabsTestTask
 import { test, expect } from '../src/fixtures/test-fixtures';
+import { CHECKOUT_CUSTOMER } from '../src/data/checkout';
 
 const PRODUCT_NAME = 'Sauce Labs Backpack';
 
@@ -16,7 +17,11 @@ test.describe('Checkout', () => {
 
     await cartPage.checkout();
 
-    await checkoutStepOnePage.fillForm('John', 'Doe', '12345');
+    await checkoutStepOnePage.fillForm(
+      CHECKOUT_CUSTOMER.firstName,
+      CHECKOUT_CUSTOMER.lastName,
+      CHECKOUT_CUSTOMER.postalCode,
+    );
     await checkoutStepOnePage.continue();
 
     await expect(checkoutStepTwoPage.total).toBeVisible();
