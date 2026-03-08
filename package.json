@@ -17,7 +17,8 @@
     "test:headed": "npx playwright test --headed",
     "test:ui": "npx playwright test --ui",
     "test:debug": "npx playwright test --debug",
-    "report": "npx playwright show-report"
+    "report": "npx playwright show-report",
+    "test:docker": "docker compose up --build --abort-on-container-exit"
   },
   "dependencies": {
     "typescript": "^5.9.3"

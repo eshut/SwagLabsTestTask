@@ -1,0 +1,6 @@
+services:
+  tests:
+    build: .
+    volumes:
+      - ./playwright-report:/usr/src/test/playwright-report
+      - ./test-results:/usr/src/test/test-results
